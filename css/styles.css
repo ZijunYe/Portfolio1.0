@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+}
+.name-container{
+  position: absolute;
+  width: 722px;
+  height: 163px;
+  left: 107px;
+  top: 150px;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 55px;
+  color: #000000;
+  margin: auto;
+}
+
+
+
+#highligntN{
+  background-color:#FCFF5B;
+}
