@@ -6,68 +6,123 @@ hr {
   border: dotted #EAF6F6 6px;
   border-bottom: none;
   width: 4%;
-  margin: 100px auto;
+  margin: 20px auto;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+
+}
+a:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 0.5em;
+  text-decoration-color: #FCFF5B;
+
 }
 .top-container{
-
    position: relative;
-   padding-top: 200px;
-   padding-bottom: 300px;
-
+   padding-top: 0px;
+   padding-bottom: 400px;
 
 }
-
 .middle-container{
     background-color:#F6F9FC;
+    margin-top: 150px;
     padding-top:100px;
     padding-bottom: 200px;
+}
 
-
+.middle-container2{
+  background-color:white;
+  padding-top:100px;
+  padding-bottom:100px;
 }
 .bottom-container {
-  background-color: #66BFBF;
+  background-color: white;
   padding-top:20px;
   padding-bottom:20px;
 }
 
-.nav-bar{
-    position: absolute;
-    width: 84px;
-    height: 21px;
-    left: 50em;
-    right:200px;
-    top: 88px;
+.navbar {
+
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    top:0px;
     z-index: 1000;
-    opacity: 0.9;
-    backdrop-filter: blur(3px);
+     opacity: 0.9;
+     backdrop-filter: blur(3px);
 
 }
 
-.nav{
-  display:block;
-  text-decoration: none;
-  font-family: 'Martel', serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 21px;
-  padding:40px;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
-.text{
-  color:black;
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40em;
+    padding-left: 0px;
 }
-.text:hover{
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+.nav-item {
+    margin-left: 5em;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color:  #595959;
+    font-family: 'Satisfy', cursive;
+}
+@media only screen and (max-width: 1000px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
 }
 .name-container{
   position: relative;
+  top:200px;
   width: 722px;
   height: 163px;
   left: 100px;
   margin-left:100px;
   font-family: 'Noto Serif JP', serif;
-
   font-style:normal;
   font-weight:normal;
   font-size: 4em;
@@ -81,10 +136,20 @@ hr {
 }
 
 
+@media screen and (max-width: 900px) {
+  .name-container{
+    font-size:2.5em;
+  }
+  .bottom-container{
+    font-size: 0.5em;
+  }
+
+}
+
 /*here is projects section*/
 .post-wrapper{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 320px);
+	grid-template-columns: repeat(auto-fit, 400px);
 	gap:20px;
 	justify-content: center;
 	padding-bottom: 50px;
@@ -119,6 +184,20 @@ hr {
 	font-size: 14px;
 }
 
+.display-about{
+  position:relative;
+  display: grid;
+	grid-template-columns: repeat(auto-fit, 400px);
+  margin-left: 12em;
+
+}
+.intro{
+  margin-left:2em;
+  width:600px;
+  text-align: left;
+  font-family:  'Noto Serif JP', serif;
+}
+
 .fa {
   padding: 20px;
   font-size: 100px;
@@ -129,35 +208,4 @@ hr {
 }
 .fa:hover {
   opacity: 0.7;
-}
-
-
-
-.scrollToTopBtn {
-  background-color: black;
-  border: none;
-  border-radius: 50%;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 48px;
-  width: 48px;
-
-  /* place it at the bottom right corner */
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  /* keep it at the top of everything else */
-  z-index: 100;
-  /* hide with opacity */
-  opacity: 0;
-  /* also add a translate effect */
-  transform: translateY(100px);
-  /* and a transition */
-  transition: all .5s ease
-}
-
-.showBtn {
-  opacity: 1;
-  transform: translateY(0)
 }
