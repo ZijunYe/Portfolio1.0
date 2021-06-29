@@ -51,6 +51,7 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     padding: 0.4rem 1.5rem;
+    padding-right: 0px;
     position: fixed;
     top:0px;
     z-index: 1000;
@@ -95,12 +96,13 @@ a:hover{
 @media only screen and (max-width: 1000px) {
     .nav-menu {
         position: fixed;
-        left: -100%;
+
         top: 5rem;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
         border-radius: 10px;
+        margin-left:3em;
         text-align: center;
         transition: 0.3s;
         box-shadow:
@@ -143,6 +145,9 @@ a:hover{
   }
   .bottom-container{
     font-size: 0.5em;
+  }
+  .post-title{
+    font-size:1em;
   }
 
 }
