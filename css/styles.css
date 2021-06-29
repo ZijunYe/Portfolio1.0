@@ -12,6 +12,7 @@ hr {
 a{
   text-decoration: none;
   color:black;
+  font-family: 'Noto Serif JP', serif;
 
 }
 a:hover{
@@ -49,7 +50,7 @@ a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 0.4rem 1.5rem;
     position: fixed;
     top:0px;
     z-index: 1000;
@@ -86,7 +87,7 @@ a:hover{
     color: #475569;
 }
 .nav-logo {
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-weight: 500;
     color:  #595959;
     font-family: 'Satisfy', cursive;
@@ -177,11 +178,16 @@ a:hover{
 .post-title{
 	color:black;
 	margin: 0;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .post-intro{
 	color:#4b5156;
 	font-size: 14px;
+  text-align: left;
+  font-family: 'Noto Serif JP', serif;
 }
 
 .display-about{
