@@ -1,0 +1,312 @@
+body{
+  margin:0px;
+}
+
+.icon{
+  width:10%;
+}
+
+.h2{
+  font-family: 'Urbanist', sans-serif;
+}
+
+/*nav bar*/
+
+a{
+  text-decoration: none;
+  color:black;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.navbar{
+  left:0;
+  padding-top: 20px;
+  position:fixed;
+  display:flex;
+  top:0;
+  background:#F2F6F9;
+  width:100%;
+  z-index: 1000;
+}
+/*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+
+.logo{
+  width:3em;
+}
+.navItem{
+  padding-top: 35px;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-family: 'Urbanist', sans-serif;
+}
+.nav-item0{
+  padding-left: 10em;
+}
+.nav-item{
+  display:flex;
+  padding-top: 20px;
+  width:2em;
+  margin:auto;
+}
+#item1{
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  padding-right: 10px;
+}
+#item2{
+  font-family: 'Urbanist', sans-serif;
+  font-weight:300;
+}
+
+/*intro */
+#intro{
+  background-color: #F2F6F9;
+  padding-top: 100px;
+  height:25em;
+  text-align: center;
+}
+
+.projectName{
+  padding-top: 9em;
+}
+
+.briefView{
+  display:flex;
+  padding-top: 6em;
+  margin:auto;
+  width:55em;
+  padding-bottom: 10em;
+
+}
+
+.title, .intro{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.intro{
+  color:#494B50;
+}
+
+.briefView section{
+  background:#FFF;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+  .briefView{
+    display:block;
+    text-align: left;
+    padding-top: 14em;
+    margin-left: 5em;
+  }
+}
+
+.briefView h5{
+  color:#5589EB;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+
+}
+
+.briefView p{
+  color: #494B50;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+}
+
+#introduction{
+  width:50em;
+  margin-left: 320px;
+  padding-top: 10em;
+  transition: margin-left .5s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+#introduction p{
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2em;
+  font-size:1em;
+}
+
+.hide{
+  opacity:0;
+}
+
+#overview{
+  margin-left: 300px;
+  transition: margin-left .5s;
+}
+#overview .gif{
+  width:50em;
+  padding-top: 5em;
+}
+.overview-content{
+  display:flex;
+  margin-top: 7em;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+
+
+.overview-content p{
+  font-family: 'Roboto', sans-serif;
+  width:40em;
+  margin-left: 6em;
+  line-height: 2em;
+  font-size:1em;
+}
+
+#workflow{
+  margin-top: 10em;
+  margin-left: 300px;
+  transition: margin-left .5s;
+}
+
+.flow1{
+  width:60em;
+}
+
+.flow2{
+  width:40em;
+}
+
+#screens{
+  margin-top: 10em;
+  margin-left: 300px;
+  transition: margin-left .5s;
+}
+
+.img1, .img2, .img3, .img4{
+  width:50em;
+  margin-bottom: 5em;
+}
+
+
+/*animate*/
+.animate {
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@media only screen and (max-width: 1300px) {
+  #introduction{
+    padding-top: 25em;
+    margin-left: 100px;
+  }
+
+  #overview, #workflow {
+    margin-left: 7em;;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2000; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Urbanist', sans-serif;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #5589EB;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#intro {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#nav{
+  transition: margin-left .5s;
+  padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#footer{
+  text-align: center;
+}
+#footer img{
+  width:4.5%;
+}
+
+#footer p{
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
