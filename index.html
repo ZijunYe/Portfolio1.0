@@ -3,137 +3,78 @@
   <head>
     <meta charset="utf-8">
     <title>Zijun Ye</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <!--google font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Martel:wght@200&family=Nanum+Myeongjo&family=Noto+Serif+JP:wght@200&family=Noto+Serif+KR:wght@200&family=Raleway:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-
-
-
+    <link rel="icon" href="images/ZY.png">
+    <link rel="stylesheet" href="css/new.css">
    <!--icon-->
   <script src="https://kit.fontawesome.com/7211adfcf2.js" crossorigin="anonymous"></script>
 
+
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@100;300;700&family=Urbanist:ital,wght@0,200;0,300;0,400;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
   </head>
+
   <body>
     <section id="home">
-      <nav class="navbar">
-        <a href="#" class="nav-logo">Zijun Ye</a>
-        <ul style="list-style: none;"class="nav-menu">
-            <li class="nav-item">
-                <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#projects" class="nav-link">Project</a>
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-            </li>
-        </ul>
-    </nav>
+      <div class="nav-bar animate fadeIn">
+        <a href="#"><img class="nav-logo " src="image/icon/logoNoBg.png"></a>
+        <div class="nav-item">
+          <p><a href="#projects"id="item1">Work</a></p>
+          <p id="block"> | </p>
+          <p><a href="about.html" id="item2"> About</a></p>
+        </div>
+      </div>
 
-      <div class="name-container">
-        <p class="namep1"> Hello! I'm <a class="name"href="#about" ><span id="highligntN">Zijun Ye</span></a>,</p>
+      <div class="intro animate fadeInUp">
+        <p class="namep1"> Hello! I'm <a class="name" href="about.html" ><span id="namelight">Zijun Ye</span></a>,</p>
         <p class="namep2">a Computer Science Student</p>
         <a class="namep3" href="https://engineering.uottawa.ca/">@UOttawa</a>
-
-        <p class="namep4" >Scroll to explore☺</p>
+        <p class="namep4">Scroll to explore☺</p>
       </div>
-
     </section>
 
-    <div class="middle-container" id="projects">
-      <div class="title" >Projects</div>
-        <div class="post-wrapper">
+    <section id="projects">
+      <div class="post-wrapper animate fadeIn">
+        <div onclick="location.href='project1.html'" class="post">
+          <h1 class="post-title">BRIGHTSPACE</h1>
+          <p class="post-intro">User Experience,User Interface</p>
+          <img class="post-cover post1" src="image/projectCover/BlackBoardCover.png">
+        </div>
 
-              <div class="post">
-                <img class="image"src="images/Bakerysite.png">
-                <div class="post-preview">
-                  <h6 class="post-title">Sissi Bakery</h6>
-                    <p class="post-title2" >Commercial Landing Page</p>
-      							<p class="post-intro">Design and framework using Figma and photoshop.Built page by Bootstrap,HTML,CSS</p>
-      							<a style="color:#6a6a6a;font-size:12px;" href="https://sissibakery.github.io/">Read More</a>
-                </div>
-              </div>
+        <div onclick="location.href='https://sissibakery.github.io/'" class="post">
+          <h1 class="post-title">COMMERCIAL SITE</h1>
+          <p class="post-intro">Landing Page(HTML,CSS,Bootstrap)</p>
+          <img class="post-cover post2" src="image/projectCover/Bakery2.png">
+        </div>
 
+        <div class="post">
+          <h1 class="post-title">BUDGETING APPLICATION</h1>
+          <p class="post-intro">HTML,CSS,JavaScript</p>
+          <img class="post-cover post3" src="image/projectCover/budget.gif">
+        </div>
 
-
-          <div class="post">
-            <img class="image"src="images/Sudoku.png">
-            <div class="post-preview">
-              <h6 class="post-title">Sudoku Solver</h6>
-              <p class="post-title2" >Python Project</p>
-              <p class="post-intro">The projects implemented by backtracking and double matrix</p>
-              <a style="color:#6a6a6a;font-size:12px;" href="https://github.com/ZijunYe/sudo/blob/main/README.md">Read More</a>
-            </div>
-          </div>
-
-
-
-
-          <div class="post">
-            <img class="image"src="images/SnakeG.png">
-            <div class="post-preview">
-              <h6 class="post-title">Snake Game</h6>
-              <p class="post-title2" >Python Project</p>
-              <p class="post-intro">Using python turtle and operation system interface to build the game.</p>
-              <a style="color:#6a6a6a;font-size:12px;" href="https://github.com/ZijunYe/SnakeG/blob/main/README.md">Read More</a>
-            </div>
-
+        <div class="post">
+          <h1 class="post-title">Comming soon</h1>
+          <p class="post-intro"></p>
 
         </div>
 
-        </div>
+
 
       </div>
+    </section>
 
-    </div>
 
-    <div class="middle-container2" id="about">
-        <div class="title" >About</div>
-        <div class="display-about">
-          <img style="border-radius:10%;height:400px;width:400px;"src="images/about.JPG" alt="zijun"></img>
-          <div class="intro">
-            <p>Hi,there 👋🏼</p>
-            <P>I’m Zijun, or you can call me June. </P>
-            <p>I am passionate about mobile and  front-end development, design and user experience. As new to this industry, I am still exploring my interests. I love solving challenging problems; also enjoy collaborating with different people to brainstorm solutions together. </p>
-            <p>“Work in progress”, is my motto. I’m always trying to grow and learn something new. Currently, I’m learning cybersecurity and more front-end development. </p>
-            <p>Currently, I’m seeking a  summer co-op position.</p>
-
-            <h3>Other things I enjoy: </h3>
-              <ul>
-                <li><a style="font-weight:bold" href="#">Video editing & Photography 🌟</a>  record all beautiful things that touch my heart </li>
-                <li><a style="font-weight:bold" href="#">Bakery 🥐</a> Baking for people I love </li>
-                <li><a style="font-weight:bold" href="#">Running 🏃🏼</a>‍ Goal : complete half marathon</li>
-                <li><a style="font-weight:bold" href="#">Reading 📚</a> “A reader lives a thousand lives”  </li>
-              </ul>
-              <p>Want to know more? Check out: <a style="font-weight:bolder" href="#">Zijun's Life</a> </p>
-              <p>Contact me for co-op work, project partner or if you want to chat! <a style="font-weight:bold" href="mailto:zye072@uottawa.ca">Shoot me a message.</a> I’d be happy to hear from you! </p>
-
-          </div>
-
-        </div>
-
-    </div>
-    <hr>
-    <div class="bottom-container" id="contact">
-
-      <div class="title">Get  In  Touch</div>
+    <section id=footer>
+      <hr>
+      <div class="title">GET IN TOUCH</div>
       <a href="https://www.linkedin.com/in/zijunye/"class="fa fa-linkedin"></a>
       <a href="https://github.com/ZijunYe"class="fa fa-github"></a>
       <a href="mailto:zye072@uottawa.ca"class="fa fa-envelope"></a>
+    </section>
       <p class="copyright">© 2021 Zijun Ye. All rights reserved.</p>
-  </div>
-
-
 
   </body>
 </html>
